@@ -33,8 +33,8 @@ if($method == 'POST'){
 	//$response->source = "webhook";
 	//echo json_encode($response);
 	
-	$output['speech']= $response['serviceresponse']['responsepreamble']['responsemessage'];
-	$output['displayText']= $response['serviceresponse']['responsepreamble']['responsemessage'];
+	$output['speech']= 'hello world';
+	$output['displayText']= 'hello world';
 	$output['source']= 'whatever.php';
 	
 	ob_end_clean();
