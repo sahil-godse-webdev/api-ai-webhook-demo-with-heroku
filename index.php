@@ -27,18 +27,18 @@ if($method == 'POST'){
 			break;
 	}
 
-	$response = new \stdClass();
+	/*$response = new \stdClass();
 	$response->speech = $text;
 	$response->displayText = $speech;
-	$response->source = "webhook";
-	echo json_encode($response);
+	$response->source = "webhook";*/
+	echo json_encode($speech);
 	
 	/*$output['speech']= 'hello world';
 	$output['displayText']= 'hello world';
 	$output['source']= 'whatever.php';
 	
 	ob_end_clean();*/
-	echo json_encode($output);
+	//echo json_encode($output);
 }
 else
 {
