@@ -27,17 +27,17 @@ if($method == 'POST'){
 			break;
 	}
 
-	//$response = new \stdClass();
-	//$response->speech = $text;
-	//$response->displayText = $speech;
-	//$response->source = "webhook";
-	//echo json_encode($response);
+	$response = new \stdClass();
+	$response->speech = $text;
+	$response->displayText = $speech;
+	$response->source = "webhook";
+	echo json_encode($response);
 	
-	$output['speech']= 'hello world';
+	/*$output['speech']= 'hello world';
 	$output['displayText']= 'hello world';
 	$output['source']= 'whatever.php';
 	
-	ob_end_clean();
+	ob_end_clean();*/
 	echo json_encode($output);
 }
 else
